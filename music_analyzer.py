@@ -266,7 +266,7 @@ def show_statistics(songs):
     genre_count = calculate_genre_count(songs)
     most_common_genre = max(genre_count, key=genre_count.get)
 
-    print("\n--- Playlist Statistics ---")
+   print("\n--- Playlist Statistics Summary ---")
     print(f"Total number of songs: {total_songs}")
     print(f"Most played song: {most_played.title} by {most_played.artist} ({most_played.play_count} plays)")
     print(f"Average duration: {average_duration:.2f} seconds ({format_duration(int(average_duration))})")
@@ -324,8 +324,8 @@ def main():
     while True:
         print("\n--- Music Playlist Analyzer ---")
         print("1. Show all songs")
-        print("2. Search songs")
-        print("3. Sort songs")
+        print("2. Search for songs")
+       print("3. Sort playlist")
         print("4. Show statistics")
         print("5. Show genre chart")
         print("6. Add new song")
