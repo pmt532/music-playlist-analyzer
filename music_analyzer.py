@@ -86,7 +86,7 @@ def save_data(filename, songs):
             for song in songs:
                 writer.writerow(song.to_dict())
 
-        print("Data saved successfully.")
+        print("Playlist data saved successfully.")
 
     except PermissionError:
         print("Error: Permission denied. Could not save the file.")
@@ -193,7 +193,7 @@ def search_songs(songs):
             results.append(song)
 
     if len(results) == 0:
-        print("No matching songs found.")
+        print("No matching songs were found.")
     else:
         print(f"\nFound {len(results)} matching song(s):")
         display_songs(results)
@@ -311,7 +311,7 @@ def add_song(songs):
     new_song = Song(title, artist, genre, duration, play_count)
     songs.append(new_song)
 
-    print(f"Song '{title}' added successfully.")
+    print(f"Song '{title}' was added successfully.")
 
 
 def main():
